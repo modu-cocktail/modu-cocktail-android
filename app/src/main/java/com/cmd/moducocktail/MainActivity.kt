@@ -15,18 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var data = listOf("- 선택하세요 -", "1월", "2월", "3월", "4월", "5월", "6월")
-        var adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data)
-
-        spinner.adapter = adapter
-        spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-
-            }
-
-            override fun onItemSelected(p0: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                result.text = data.get(position)
-            }
-        }
+        
     }
 }
