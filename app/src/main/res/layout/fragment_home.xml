@@ -6,9 +6,72 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="메인화면.\n검색창과 칵테일 리스트 구현예정" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_margin="20dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="검색"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:text="오늘의 추천"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="리싸이클러뷰 이용해 칵테일리스트 쭉 들어갈 예정"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:text="아이스크림과 즐겨요"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="리싸이클러뷰 이용해 칵테일리스트 쭉 들어갈 예정"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:text="콜라와 함께라면 뭐든 맛나요"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="리싸이클러뷰 이용해 칵테일리스트 쭉 들어갈 예정"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
 
 </FrameLayout>
