@@ -5,10 +5,36 @@
     android:layout_height="match_parent"
     tools:context=".MyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="My탭 클릭시 나타날 부분\n로그인 여부 나눠 구현예정." />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="모칵바텐더 강준우님의 픽"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="리싸이클러뷰 이용해 칵테일리스트 쭉 들어갈 예정"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="리싸이클러뷰 이용해 칵테일리스트 쭉 들어갈 예정"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="리싸이클러뷰 이용해 칵테일리스트 쭉 들어갈 예정"/>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
