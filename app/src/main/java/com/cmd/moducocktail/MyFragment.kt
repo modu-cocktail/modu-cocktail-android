@@ -21,11 +21,23 @@ class MyFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+        }
+        fun loadData(): MutableList<Cocktail>{
+            val data:MutableList<Cocktail> = mutableListOf()
+            for (no in 1..10){
+                val imgId = R.drawable.logo
+                val name = "${no+1}번째 칵테일"
+                var cocktail = Cocktail(imgId, name)
+                data.add(cocktail)
+            }
+            return data
         }
     }
 

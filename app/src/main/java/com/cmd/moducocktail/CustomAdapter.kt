@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.item_recycler.view.*
 import java.text.SimpleDateFormat
 
 class CustomAdapter : RecyclerView.Adapter<Holder>(){
-    var listData = mutableListOf<Memo>()
+    var listData = mutableListOf<Cocktail>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType:Int):Holder{
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recycler, parent, false)
@@ -21,24 +21,20 @@ class CustomAdapter : RecyclerView.Adapter<Holder>(){
     }
 
     override fun onBindViewHolder(holder:Holder, position:Int){
-        val memo = listData.get(position)
-        holder.setMemo(memo)
+        val cocktail:Cocktail = listData[position]
+        holder.setCocktail(cocktail)
     }
 }
 
 class Holder(itemView: View): RecyclerView.ViewHolder(itemView){
     init{
         itemView.setOnClickListener{
-            Toast.makeText(itemView?.context, "클릭된 아이템=${itemView.textTitle.text}", Toast.LENGTH_LONG).show()
+            Toast.makeText(itemView?.context, "클릭된 아이템=${itemView.cocktailName.text}", Toast.LENGTH_LONG).show()
         }
     }
 
-    fun setMemo(memo:Memo){
-        itemView.textNo.text = "${memo.no}"
-        itemView.textTitle.text = memo.title
-
-        var sdf = SimpleDateFormat("yyyy/MM/dd")
-        var formattedDate = sdf.format(memo.timestamp)
-        itemView.textDate.text = formattedDate
+    fun setCocktail(cocktail:Cocktail){
+//        itemView.cocktailImage.
+        itemView.cocktailName.text = "merong"
     }
 }
