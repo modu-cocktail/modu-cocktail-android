@@ -42,19 +42,19 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recommendedCocktailList = arrayListOf(
-            Cocktails(R.drawable.logo, "소맥")
+            Cocktails(R.drawable.somac, "소맥")
         )
 
         val icecreamCocktailList = arrayListOf(
-            Cocktails(R.drawable.logo, "스크류바주"),
-            Cocktails(R.drawable.logo, "메로나주"),
-            Cocktails(R.drawable.logo, "죠스바주")
+            Cocktails(R.drawable.skrewbarju, "스크류바주"),
+            Cocktails(R.drawable.meronaju, "메로나주"),
+            Cocktails(R.drawable.jawsbarju, "죠스바주")
         )
 
         val cokeCocktailList = arrayListOf(
-            Cocktails(R.drawable.logo, "소콕"),
-            Cocktails(R.drawable.logo, "콜라토닉"),
-            Cocktails(R.drawable.logo, "한라코크")
+            Cocktails(R.drawable.energizerju, "에너자이저주"),
+            Cocktails(R.drawable.mogumoguju, "모구모구주"),
+            Cocktails(R.drawable.bongbongju, "봉봉주")
         )
 
         rv_recommendation.layoutManager = LinearLayoutManager(activity)
