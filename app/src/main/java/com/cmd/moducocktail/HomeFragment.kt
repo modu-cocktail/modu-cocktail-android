@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,6 +37,38 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val recommendedCocktailList = arrayListOf(
+            Cocktails(R.drawable.logo, "소맥")
+        )
+
+        val icecreamCocktailList = arrayListOf(
+            Cocktails(R.drawable.logo, "스크류바주"),
+            Cocktails(R.drawable.logo, "메로나주"),
+            Cocktails(R.drawable.logo, "죠스바주")
+        )
+
+        val cokeCocktailList = arrayListOf(
+            Cocktails(R.drawable.logo, "소콕"),
+            Cocktails(R.drawable.logo, "콜라토닉"),
+            Cocktails(R.drawable.logo, "한라코크")
+        )
+
+        rv_recommendation.layoutManager = LinearLayoutManager(activity)
+        rv_coke.layoutManager = LinearLayoutManager(activity)
+        rv_icecream.layoutManager = LinearLayoutManager(activity)
+        rv_recommendation.setHasFixedSize(true)
+        rv_coke.setHasFixedSize(true)
+        rv_icecream.setHasFixedSize(true)
+        rv_recommendation.isNestedScrollingEnabled = false
+        rv_coke.isNestedScrollingEnabled = false
+        rv_icecream.isNestedScrollingEnabled = false
+        rv_recommendation.adapter = CocktailAdapter(recommendedCocktailList)
+        rv_icecream.adapter = CocktailAdapter(icecreamCocktailList)
+        rv_coke.adapter = CocktailAdapter(cokeCocktailList)
     }
 
     companion object {
