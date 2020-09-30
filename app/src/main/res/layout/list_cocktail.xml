@@ -7,13 +7,13 @@
     android:layout_margin="20dp">
 
     <ImageView
-        android:id="@+id/cocktailImage"
+        android:id="@+id/cocktail_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/logo" />
 
     <TextView
-        android:id="@+id/cocktailName"
+        android:id="@+id/cocktail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="3"
