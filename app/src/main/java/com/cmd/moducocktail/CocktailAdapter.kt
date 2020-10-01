@@ -10,32 +10,40 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class CocktailAdapter(val cocktailList: ArrayList<Cocktails>) : RecyclerView.Adapter<CocktailAdapter.CustomViewHolder>(){
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CocktailAdapter.CustomViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_cocktail, parent, false)
         // TODO : 클릭 시 넘어가는 인텐트 추가
 
-
-        return CustomViewHolder(view).apply{
-            itemView.setOnClickListener{
-                val curPos: Int = adapterPosition
-                val cocktail: Cocktails = cocktailList[curPos]
-
-                // 인텐트 번들에 넣어 실행하기
-                val intent = Intent(itemView?.context, DetailActivity::class.java)
-                // TODO : intent.putExtra("cocktail", cocktail) 왜 오류뜨지?
-                ContextCompat.startActivity(itemView.context, intent, null)
-
-            }
-        }
+        return CustomViewHolder(view)
+//        return CustomViewHolder(view).apply{
+//            itemView.setOnClickListener{
+//                val curPos: Int = adapterPosition
+//                val cocktail: Cocktails = cocktailList[curPos]
+//
+//                // 인텐트 번들에 넣어 실행하기
+//                val intent = Intent(itemView?.context, DetailActivity::class.java)
+//                // TODO : intent.putExtra("cocktail", cocktail) 왜 오류뜨지?
+//                ContextCompat.startActivity(itemView.context, intent, null)
+//
+//            }
+//        }
     }
 
     override fun getItemCount(): Int {
         return cocktailList.size
     }
 
-    override fun onBindViewHolder(holder: CocktailAdapter.CustomViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         holder.image.setImageResource(cocktailList[position].image)
         holder.name.text = cocktailList[position].name
+
+        holder.itemView.setOnClickListener{
+            val cocktail: Cocktails = cocktailList[position]
+            val intent = Intent(holder.itemView?.context, DetailActivity::class.java)
+            // TODO : 나중에 id값 등으로 변경
+            intent.putExtra("cocktailName", cocktail.name)
+            ContextCompat.startActivity(holder.itemView.context, intent, null)
+        }
 
     }
 
