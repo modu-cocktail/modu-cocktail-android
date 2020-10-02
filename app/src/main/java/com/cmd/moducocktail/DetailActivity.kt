@@ -9,6 +9,15 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        tv_name.text = "칵테일 이름 : ${intent.getStringExtra("cocktailName")}"
+        tv_name.text = "${intent.getStringExtra("cocktailName")}의 정보정보"
+
+        val actionbar = supportActionBar
+        actionbar!!.title = "${intent.getStringExtra(("cocktailName"))}"
+        actionbar.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
