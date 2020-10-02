@@ -32,6 +32,38 @@
                 android:fontFamily="@font/yaregular"
                 android:text="말이 필요없는 스크류바맛 칵테일\n은근 탄산감이 괜찮답니다."
                 android:layout_gravity="center"/>
+            <!-- 이쪽에 맛그래프 들어감.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/yaregular"
+                android:text="재료"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/yaregular"
+                android:text="레시피"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:fontFamily="@font/yaregular"
+                android:text="1. 소주를 컵에 적당량 넣습니다.\n2. 맥주를 컵에 적당량 따릅니다.\n3. 원샷!"
+                />
+
         </LinearLayout>
     </ScrollView>
 
