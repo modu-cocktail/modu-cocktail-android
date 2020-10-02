@@ -15,18 +15,23 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/iv_image"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
                 tools:srcCompat="@tools:sample/avatars" />
 
+
+
             <TextView
-                android:id="@+id/tv_name"
+                android:id="@+id/tv_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="칵테일 이름 : 스크류바주" />
+                android:layout_marginTop="80dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/yaregular"
+                android:text="말이 필요없는 스크류바맛 칵테일\n은근 탄산감이 괜찮답니다."
+                android:layout_gravity="center"/>
         </LinearLayout>
     </ScrollView>
 
