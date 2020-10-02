@@ -19,20 +19,26 @@
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/energizerju" />
 
-
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/chart"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                />
 
             <TextView
                 android:id="@+id/tv_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:textSize="30dp"
                 android:fontFamily="@font/yaregular"
                 android:text="말이 필요없는 스크류바맛 칵테일\n은근 탄산감이 괜찮답니다."
                 android:layout_gravity="center"/>
-            <!-- 이쪽에 맛그래프 들어감.-->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
