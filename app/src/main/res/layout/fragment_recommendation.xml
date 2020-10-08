@@ -39,17 +39,17 @@
                 android:text="탄산"
                 android:layout_gravity="center"
                 android:layout_marginRight="50dp"/>
-            <Button
+            <ToggleButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text="O"
-                android:textSize="50dp"
+                android:textSize="30dp"
                 android:layout_marginRight="20dp"/>
-            <Button
+            <ToggleButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text="X"
-                android:textSize="50dp"/>
+                android:textSize="30dp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -64,23 +64,40 @@
                 android:text="도수"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"/>
-            <Button
+            <ToggleButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:text="⬆️"
-                android:textSize="50dp"
+                android:textSize="30dp"
                 android:layout_marginRight="10dp"/>
-            <Button
+            <ToggleButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:text="↔️️"
-                android:textSize="50dp"
+                android:textSize="30dp"
                 android:layout_marginRight="10dp"/>
-            <Button
+            <ToggleButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:text="⬇️"
-                android:textSize="50dp"/>
+                android:textSize="30dp"/>
+<!--            <Button-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:text="⬆️"-->
+<!--                android:textSize="50dp"-->
+<!--                android:layout_marginRight="10dp"/>-->
+<!--            <Button-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:text="↔️️"-->
+<!--                android:textSize="50dp"-->
+<!--                android:layout_marginRight="10dp"/>-->
+<!--            <Button-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:text="⬇️"-->
+<!--                android:textSize="50dp"/>-->
 
         </LinearLayout>
         <LinearLayout
