@@ -40,12 +40,14 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="50dp"/>
             <ToggleButton
+                android:id="@+id/tb_spriteYes"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text="O"
                 android:textSize="30dp"
                 android:layout_marginRight="20dp"/>
             <ToggleButton
+                android:id="@+id/tb_spriteNo"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text="X"
@@ -65,18 +67,21 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"/>
             <ToggleButton
+                android:id="@+id/tb_alcoholHigh"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:text="⬆️"
                 android:textSize="30dp"
                 android:layout_marginRight="10dp"/>
             <ToggleButton
+                android:id="@+id/tb_alcoholMid"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:text="↔️️"
                 android:textSize="30dp"
                 android:layout_marginRight="10dp"/>
             <ToggleButton
+                android:id="@+id/tb_alcoholLow"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:text="⬇️"
