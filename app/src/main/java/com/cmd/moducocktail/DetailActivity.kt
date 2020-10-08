@@ -31,11 +31,11 @@ class DetailActivity : AppCompatActivity() {
         hi.add("신맛")
         hi.add("술맛")
         hi.add("틴신")
-        entries.add(RadarEntry(1.0f, "단맛"))
-        entries.add(RadarEntry(1.5f, "쓴맛"))
-        entries.add(RadarEntry(2.0f, "신맛"))
-        entries.add(RadarEntry(3.0f, "술맛"))
-        entries.add(RadarEntry(3.5f, "탄산"))
+        entries.add(RadarEntry(intent.getFloatExtra("cocktailSweet", 0f), "단맛"))
+        entries.add(RadarEntry(intent.getFloatExtra("cocktailBitter", 0f), "쓴맛"))
+        entries.add(RadarEntry(intent.getFloatExtra("cocktailSour", 0f), "신맛"))
+        entries.add(RadarEntry(intent.getFloatExtra("cocktailAlcohol", 0f), "술맛"))
+        entries.add(RadarEntry(intent.getFloatExtra("cocktailSprite", 0f), "탄산"))
         val radarDataSet = RadarDataSet(entries, "메롱")
         radarDataSet.color = Color.BLUE // 그래프 자체의 색깔을 결정
 
@@ -70,6 +70,13 @@ class DetailActivity : AppCompatActivity() {
         val actionbar = supportActionBar
         actionbar!!.title = "${intent.getStringExtra(("cocktailName"))}"
         actionbar.setDisplayHomeAsUpEnabled(true)
+
+        // 인텐트값 적용
+        iv_image.setImageResource(intent.getIntExtra("cocktailImage", R.drawable.logo))
+        tv_description.text = intent.getStringExtra("cocktailDescription")
+        tv_recipes.text = intent.getStringExtra("cocktailRecipes")
+
+
     }
 
 

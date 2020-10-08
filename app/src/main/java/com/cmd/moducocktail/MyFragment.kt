@@ -45,9 +45,9 @@ class MyFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val cocktailList = arrayListOf(
-            Cocktails(R.drawable.bluelemonademilkisju, "블루레몬에이드밀키스"),
-            Cocktails(R.drawable.bongbongju, "봉봉주"),
-            Cocktails(R.drawable.chocoemongju, "초코에몽주")
+            Cocktails(R.drawable.bluelemonademilkisju, "블루레몬에이드밀키스", 1f, 1f, 1f, 1f, 1f, "색깔이예뻐요", "히히히"),
+            Cocktails(R.drawable.bongbongju, "봉봉주", 1f,1f,1f,1f,1f,"봉보로봉봉", "봉봉주로만들어요"),
+            Cocktails(R.drawable.chocoemongju, "초코에몽주", 2f,2f,2f,2f,2f,"초코에엥몽", "극강의단맛")
         )
 
         rv_cocktail.layoutManager = LinearLayoutManager(activity) // 여기서 인자 3개 대신 그냥 activity 하나 넣음.

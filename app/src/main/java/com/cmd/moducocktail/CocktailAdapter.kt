@@ -42,6 +42,14 @@ class CocktailAdapter(val cocktailList: ArrayList<Cocktails>) : RecyclerView.Ada
             val intent = Intent(holder.itemView?.context, DetailActivity::class.java)
             // TODO : 나중에 id값 등으로 변경
             intent.putExtra("cocktailName", cocktail.name)
+            intent.putExtra("cocktailImage", cocktail.image)
+            intent.putExtra("cocktailDescription", cocktail.description)
+            intent.putExtra("cocktailSweet", cocktail.sweet)
+            intent.putExtra("cocktailSour", cocktail.sour)
+            intent.putExtra("cocktailBitter", cocktail.bitter)
+            intent.putExtra("cocktailAlcohol", cocktail.alcohol)
+            intent.putExtra("cocktailSprite", cocktail.sprite)
+            intent.putExtra("cocktailRecipes", cocktail.recipes)
             ContextCompat.startActivity(holder.itemView.context, intent, null)
         }
 

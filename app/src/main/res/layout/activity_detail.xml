@@ -49,6 +49,7 @@
                 android:text="재료"
                 />
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ingredients"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -61,6 +62,7 @@
                 android:text="레시피"
                 />
             <TextView
+                android:id="@+id/tv_recipes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

@@ -42,19 +42,18 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recommendedCocktailList = arrayListOf(
-            Cocktails(R.drawable.somac, "소맥")
+            Cocktails(R.drawable.somac, "소맥", 1f,2f,3f,4f,5f, "소맥소맥", "1.하이\n2.바이")
         )
 
         val icecreamCocktailList = arrayListOf(
-            Cocktails(R.drawable.skrewbarju, "스크류바주"),
-            Cocktails(R.drawable.meronaju, "메로나주"),
-            Cocktails(R.drawable.jawsbarju, "죠스바주")
+            Cocktails(R.drawable.skrewbarju, "스크류바주", 5f,4f,3f,4f,5f, "맛나맛나 스크류바", "1.하이\n2.바이"),
+            Cocktails(R.drawable.meronaju, "메로나주", 1.9f,1.2f,4f,2f,3f, "달콤달콤 메로나주", "1.하이\n2.바이"),
+            Cocktails(R.drawable.jawsbarju, "죠스바주", 3f,3f,4f,2f,1f, "으아아 조스바", "1.하이\n2.바이")
         )
 
         val cokeCocktailList = arrayListOf(
-            Cocktails(R.drawable.energizerju, "에너자이저주"),
-            Cocktails(R.drawable.mogumoguju, "모구모구주"),
-            Cocktails(R.drawable.bongbongju, "봉봉주")
+            Cocktails(R.drawable.mogumoguju, "모구모구주", 5f,5f,5f,4f,2f, "모구모구모구모구", "1.하이\n2.바이"),
+            Cocktails(R.drawable.bongbongju, "봉봉주", 1f,4f,3f,5f,2f, "봉보로봉봉", "1.하이\n2.바이")
         )
 
         rv_recommendation.layoutManager = LinearLayoutManager(activity)
