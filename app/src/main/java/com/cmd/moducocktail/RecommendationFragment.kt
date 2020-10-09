@@ -1,5 +1,6 @@
 package com.cmd.moducocktail
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -54,19 +55,58 @@ class RecommendationFragment : Fragment() {
         tb_alcoholMid.textOff = "↔️️"
         tb_alcoholLow.textOn = "⬇️"
         tb_alcoholLow.textOff = "⬇️"
-        tb_spriteYes.toggle()
-        tb_spriteYes.toggle()
-        tb_spriteNo.toggle()
-        tb_spriteNo.toggle()
-        tb_alcoholHigh.toggle()
-        tb_alcoholHigh.toggle()
-        tb_alcoholMid.toggle()
-        tb_alcoholMid.toggle()
-        tb_alcoholLow.toggle()
-        tb_alcoholLow.toggle()
+
         tb_spriteYes.setOnCheckedChangeListener { _, isChecked ->
-//            tb_spriteNo.toggle()
+            if(isChecked){
+                tb_spriteYes.setBackgroundColor(Color.parseColor("#00FF00"))
+            } else{
+                tb_spriteYes.setBackgroundColor(Color.parseColor("#d6d7d7"))
+            }
         }
+
+        tb_spriteNo.setOnCheckedChangeListener { _, isChecked ->
+            if(isChecked){
+                tb_spriteNo.setBackgroundColor(Color.parseColor("#00FF00"))
+            } else{
+                tb_spriteNo.setBackgroundColor(Color.parseColor("#d6d7d7"))
+            }
+        }
+
+        tb_alcoholHigh.setOnCheckedChangeListener { _, isChecked ->
+            if(isChecked){
+                tb_alcoholHigh.setBackgroundColor(Color.parseColor("#00FF00"))
+            } else{
+                tb_alcoholHigh.setBackgroundColor(Color.parseColor("#d6d7d7"))
+            }
+        }
+
+        tb_alcoholMid.setOnCheckedChangeListener { _, isChecked ->
+            if(isChecked){
+                tb_alcoholMid.setBackgroundColor(Color.parseColor("#00FF00"))
+            } else{
+                tb_alcoholMid.setBackgroundColor(Color.parseColor("#d6d7d7"))
+            }
+        }
+
+        tb_alcoholLow.setOnCheckedChangeListener { _, isChecked ->
+            if(isChecked){
+                tb_alcoholLow.setBackgroundColor(Color.parseColor("#00FF00"))
+            } else{
+                tb_alcoholLow.setBackgroundColor(Color.parseColor("#d6d7d7"))
+            }
+        }
+
+        // 매우매우 못짠코드이니 수정 필요
+//        tb_spriteYes.toggle()
+//        tb_spriteYes.toggle()
+//        tb_spriteNo.toggle()
+//        tb_spriteNo.toggle()
+//        tb_alcoholHigh.toggle()
+//        tb_alcoholHigh.toggle()
+//        tb_alcoholMid.toggle()
+//        tb_alcoholMid.toggle()
+//        tb_alcoholLow.toggle()
+//        tb_alcoholLow.toggle()
 
 
     }

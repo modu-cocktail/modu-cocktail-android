@@ -45,7 +45,8 @@
                 android:layout_height="100dp"
                 android:text="O"
                 android:textSize="30dp"
-                android:layout_marginRight="20dp"/>
+                android:layout_marginRight="20dp"
+                />
             <ToggleButton
                 android:id="@+id/tb_spriteNo"
                 android:layout_width="100dp"
