@@ -119,7 +119,8 @@
                 android:layout_marginRight="30dp"/>
             <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:max="2"/>
 
         </LinearLayout>
         <LinearLayout
@@ -133,10 +134,11 @@
                 android:textSize="20dp"
                 android:text="상큼"
                 android:layout_gravity="center"
-                android:layout_marginRight="30dp"/>
+                android:layout_marginRight="30dp" />
             <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:max="2"/>
 
         </LinearLayout>
         <LinearLayout
@@ -153,7 +155,8 @@
                 android:layout_marginRight="30dp"/>
             <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:max="2"/>
 
         </LinearLayout>
         <Button
