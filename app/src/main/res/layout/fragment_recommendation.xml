@@ -68,6 +68,14 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"/>
             <ToggleButton
+                android:id="@+id/tb_sample"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/smaple_toggle_selector"
+                android:text="⬆️"
+                android:textSize="30dp"
+                android:layout_marginRight="10dp"/>
+            <ToggleButton
                 android:id="@+id/tb_alcoholHigh"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
