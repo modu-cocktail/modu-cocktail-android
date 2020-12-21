@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/cocktail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/cocktail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="스크류바주"
+        android:textSize="30dp"
+        android:fontFamily="@font/yaregular"
+        />
+</LinearLayout>
